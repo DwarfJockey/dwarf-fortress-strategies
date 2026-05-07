@@ -1,0 +1,9 @@
+[project]
+name = "dwarf-fortress-strategies"
+version = "0.1.0"
+description = "Strategy notes for Dwarf Fortress (vanilla + DFHack)"
+requires-python = ">=3.11"
+dependencies = [
+  "mkdocs-material>=9.5",
+  "pymdown-extensions>=10.7",
+]

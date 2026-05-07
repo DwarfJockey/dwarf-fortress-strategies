@@ -1,0 +1,106 @@
+site_name: Dwarf Fortress Strategies
+site_description: Strategy notes for Dwarf Fortress (vanilla and DFHack)
+site_url: https://dwarfjockey.github.io/dwarf-fortress-strategies/
+repo_url: https://github.com/DwarfJockey/dwarf-fortress-strategies
+repo_name: DwarfJockey/dwarf-fortress-strategies
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: brown
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: brown
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/DwarfJockey/dwarf-fortress-strategies
+    - icon: fontawesome/solid/book
+      link: https://www.dwarffortresswiki.org/
+      name: Dwarf Fortress Wiki
+    - icon: fontawesome/solid/wrench
+      link: https://docs.dfhack.org/en/stable/
+      name: DFHack docs
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - getting-started/installation.md
+      - getting-started/first-fortress.md
+  - Embark:
+      - embark/site-selection.md
+      - embark/starting-seven.md
+      - embark/supplies.md
+  - Industries:
+      - industries/food-and-drink.md
+      - industries/mining-and-stoneworking.md
+      - industries/metal-industry.md
+      - industries/cloth-and-clothing.md
+      - industries/wood-industry.md
+  - Military:
+      - military/squads-and-uniforms.md
+      - military/training.md
+      - military/defenses.md
+  - Moods & Artifacts:
+      - moods/strange-moods.md
+      - moods/artifacts.md
+  - Megaprojects:
+      - megaprojects/planning.md
+      - megaprojects/water-and-magma.md
+  - Caverns & Adventure:
+      - caverns-and-adventure/caverns.md
+      - caverns-and-adventure/adventure-mode.md
+  - DFHack:
+      - dfhack/overview.md
+      - dfhack/useful-commands.md
+      - dfhack/automation.md
