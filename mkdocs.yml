@@ -104,3 +104,5 @@ nav:
       - dfhack/overview.md
       - dfhack/useful-commands.md
       - dfhack/automation.md
+  - Conventions:
+      - conventions/building-designs.md

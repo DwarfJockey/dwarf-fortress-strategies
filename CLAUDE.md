@@ -75,6 +75,10 @@ graph LR
 ```
 ````
 
+### Building designs
+
+Fortress layouts and room designs go in fenced **`text`** code blocks using the [dwarffortresswiki.org](https://www.dwarffortresswiki.org/) tile chars (`#` wall, `.` floor, `+` door, `O` fortification, `>`/`<`/`X` stairs, `,`/`o` ramps, `~` water). Multi-z designs use content tabs (one tab per z-level). When a design should be reproducible in DFHack, pair the diagram with a [Quickfort](https://docs.dfhack.org/en/stable/docs/guides/quickfort-guide.html) blueprint in a second tab using a `csv` fenced block. Full reference and worked examples: [`docs/conventions/building-designs.md`](docs/conventions/building-designs.md).
+
 ### Versioning
 
 DF mechanics shift across releases. If a strategy depends on a specific DF version (e.g. Steam `51.x`) or DFHack release, state it explicitly in an `!!! info` block at the top of the page. Don't assume the reader is on the same version you wrote against.
