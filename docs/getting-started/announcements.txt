@@ -1,0 +1,72 @@
+# Dwarf Fortress — announcements.txt overrides (partial)
+#
+# A subset of announcements.txt covering the highest-impact entries.
+# Apply by replacing the matching lines in your data/init/announcements.txt;
+# do not replace the whole file — many entries aren't covered here.
+#
+# Back up your original announcements.txt first.
+#
+# Reference: https://dwarffortresswiki.org/index.php/Announcements.txt
+#
+# Flag legend:
+#   A_D    add to log / adventure mode display
+#   D_D    fortress mode display (left-side categories panel)
+#   BOX    popup box, requires click
+#   P      pause the game
+#   R      recenter camera on the event
+#   ALERT  surface in the alert panel
+#   UCR    unit combat report (all)
+#   UCR_A  unit combat report (active reports only)
+#
+# Source: https://dwarfjockey.github.io/dwarf-fortress-strategies/getting-started/announcements/
+
+# === Always pause + recenter ===
+
+[CITIZEN_DEATH:A_D:D_D:UCR_A:ALERT:P:R]
+[CAVE_COLLAPSE:A_D:D_D:ALERT:P:R]
+[STRANGE_MOOD:A_D:D_D:BOX:P:R:ALERT]
+[CITIZEN_TANTRUM:A_D:D_D:ALERT:P:R]
+[BERSERK_CITIZEN:A_D:D_D:BOX:P:R:ALERT]
+[POSSESSED_TANTRUM:A_D:D_D:BOX:P:R:ALERT]
+[MEGABEAST_ARRIVAL:A_D:D_D:BOX:P:R:ALERT]
+[WEREBEAST_ARRIVAL:A_D:D_D:BOX:P:R:ALERT]
+[UNDEAD_ATTACK:A_D:D_D:BOX:P:R:ALERT]
+[BEAST_AMBUSH:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_DEFENDER:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_HERO:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_RESIDENT:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_THIEF:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_THIEF_SUPPORT:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_THIEF_SUPPORT_SKULKING:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_THIEF_SUPPORT_NATURE:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_SNATCHER:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_SNATCHER_SUPPORT:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_AMBUSHER:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_AMBUSHER_NATURE:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_MISCHIEVOUS:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_INJURED:A_D:D_D:ALERT:P:R]
+[AMBUSH_OTHER:A_D:D_D:BOX:P:R:ALERT]
+[AMBUSH_INCAPACITATED:A_D:D_D:ALERT:P:R]
+[FEATURE_DISCOVERY:A_D:D_D:BOX:P:R:ALERT]
+[STRUCK_DEEP_METAL:A_D:D_D:BOX:P:R:ALERT]
+[ENDGAME_EVENT_1:A_D:D_D:BOX:P:R:ALERT]
+[ENDGAME_EVENT_1B:A_D:D_D:BOX:P:R:ALERT]
+[ENDGAME_EVENT_2:A_D:D_D:BOX:P:R:ALERT]
+
+# === Recenter, no pause ===
+
+[MIGRANT_ARRIVAL:A_D:D_D:R]
+[MIGRANT_ARRIVAL_NAMED:A_D:D_D:R]
+[D_MIGRANTS_ARRIVAL:A_D:D_D:R]
+[D_MIGRANT_ARRIVAL:A_D:D_D:R]
+[CARAVAN_ARRIVAL:A_D:D_D:R:ALERT]
+[NOBLE_ARRIVAL:A_D:D_D:R]
+[LIAISON_ARRIVAL:A_D:D_D:R]
+[DIPLOMAT_ARRIVAL:A_D:D_D:R]
+[TRADE_DIPLOMAT_ARRIVAL:A_D:D_D:R]
+[STRUCK_ECONOMIC_MINERAL:A_D:D_D:R]
+
+# === Popup, no pause ===
+
+[MADE_ARTIFACT:A_D:D_D:BOX:R]
+[ARTIFACT_BEGUN:A_D:D_D:R]
