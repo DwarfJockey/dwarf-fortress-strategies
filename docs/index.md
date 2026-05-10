@@ -1,24 +1,26 @@
 # Dwarf Fortress Strategies
 
-Strategy notes for **Dwarf Fortress** — the current Steam / Classic release — and **[DFHack](https://docs.dfhack.org/en/stable/)** stable.
+This is my playbook for **Dwarf Fortress** — the strategies I actually use to keep my forts alive across the current Steam / Classic release and **[DFHack](https://docs.dfhack.org/en/stable/)** stable. It's a record of what's worked for me over many fortresses, not a general DF reference.
 
-!!! tip "How this site is organized"
+For canonical mechanics, the [Dwarf Fortress Wiki](https://www.dwarffortresswiki.org/) is the source of truth. I'll cite it where I'm relying on a specific behaviour. The opinions, embark loadouts, and "this is how I always do it" — those are mine.
 
-    - **Vanilla** procedures use only the base-game UI and work on any copy of DF.
-    - **DFHack** procedures require the DFHack add-on. They're either in the dedicated [DFHack section](dfhack/overview.md) or in a `=== "DFHack"` tab next to the vanilla approach on the same page.
+!!! tip "How the site is organized"
+
+    - **Vanilla** sections describe what I do with only the base-game UI.
+    - **DFHack** sections (and `=== "DFHack"` tabs) describe what I do when I'm running the DFHack add-on. I usually am.
 
 ## Where to start
 
-- New to the game? → [Getting Started → Installation](getting-started/installation.md), then [Your first fortress](getting-started/first-fortress.md).
-- Picking a site? → [Embark → Site selection](embark/site-selection.md).
-- Trying not to lose your fort? → [Military → Defenses](military/defenses.md) and the FPS-death warnings throughout the [Industries](industries/food-and-drink.md) section.
+- Want my opening moves? → [Embark → Site selection](embark/site-selection.md), [Starting seven](embark/starting-seven.md), [Supplies](embark/supplies.md).
+- Want my standing fortress design? → [Military → Defenses](military/defenses.md) and the [Megaprojects → Planning](megaprojects/planning.md) page.
+- Want the DFHack tooling I rely on? → [DFHack → Useful commands](dfhack/useful-commands.md) and [Automation](dfhack/automation.md).
 
-## External references
+## External references I trust
 
-- [Dwarf Fortress Wiki](https://www.dwarffortresswiki.org/) — authoritative reference for vanilla mechanics.
-- [DFHack stable docs](https://docs.dfhack.org/en/stable/) — every DFHack tool, with examples.
+- [Dwarf Fortress Wiki](https://www.dwarffortresswiki.org/) — what I check when I'm not sure about a mechanic.
+- [DFHack stable docs](https://docs.dfhack.org/en/stable/) — every DFHack tool, with examples. Always linked to the *stable* docs, not master.
 - [Bay 12 Games](http://www.bay12games.com/dwarves/) — the developers' site, release notes, dev logs.
 
 !!! info "Versioning"
 
-    Mechanics shift between DF releases. Pages that depend on a specific version will say so up front. When in doubt, check the page's last-edited date (linked at the bottom) against your installed version.
+    Mechanics shift between DF releases. Pages that depend on a specific version will say so up front. If I haven't tested a strategy on the version you're playing, I'll say that too.
