@@ -87,6 +87,8 @@ nav:
       - industries/metal-industry.md
       - industries/cloth-and-clothing.md
       - industries/wood-industry.md
+  - Workshops:
+      - workshops/quality-and-profiles.md
   - Military:
       - military/squads-and-uniforms.md
       - military/training.md
