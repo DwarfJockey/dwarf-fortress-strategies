@@ -1,0 +1,207 @@
+/*
+ * Dark stone-cavern theming for Dwarf Fortress Strategies.
+ * Targets Material for MkDocs CSS variables + admonition selectors only.
+ * No Jinja template overrides — safe across Material upgrades.
+ */
+
+/* Cinzel for headings, JetBrains Mono as the .code-clean fallback for ASCII
+   diagrams. EB Garamond and VT323 are auto-loaded by Material via theme.font. */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* ------------------------------------------------------------------ */
+/* Color schemes                                                       */
+/* ------------------------------------------------------------------ */
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #11161b;
+  --md-default-fg-color: #d8d2c4;
+  --md-default-fg-color--light: #a9a395;
+  --md-default-fg-color--lighter: #736e62;
+  --md-default-fg-color--lightest: #3a382f;
+  --md-primary-fg-color: #1a1f25;
+  --md-primary-bg-color: #d8d2c4;
+  --md-accent-fg-color: #c9853f;
+  --md-typeset-a-color: #7da89e;
+  --md-code-bg-color: #1a1f24;
+  --md-code-fg-color: #d8d2c4;
+  --md-footer-bg-color: #0d1115;
+  --md-footer-bg-color--dark: #080a0d;
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #f4ead4;
+  --md-default-fg-color: #2a241c;
+  --md-default-fg-color--light: #5a4f3e;
+  --md-default-fg-color--lighter: #8a7e69;
+  --md-primary-fg-color: #3a2e22;
+  --md-primary-bg-color: #f4ead4;
+  --md-accent-fg-color: #a26630;
+  --md-typeset-a-color: #3a6e64;
+  --md-code-bg-color: #ebdfc4;
+  --md-code-fg-color: #2a241c;
+}
+
+/* ------------------------------------------------------------------ */
+/* Typography                                                          */
+/* ------------------------------------------------------------------ */
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+/* VT323 for code by default; JetBrains Mono in the fallback chain so the
+   monospace metric is sane if VT323 fails to load. */
+.md-typeset code,
+.md-typeset pre > code {
+  font-family: "VT323", "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+  font-size: 1.05em;
+}
+
+/* Opt-out class for ASCII fences that misalign in VT323.
+   Usage: ```text { .code-clean } */
+.md-typeset .code-clean code,
+.md-typeset code.code-clean,
+.md-typeset pre.code-clean code {
+  font-family: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+  font-size: 0.85em;
+}
+
+/* ------------------------------------------------------------------ */
+/* Standard admonitions — recolored for the cavern palette             */
+/* ------------------------------------------------------------------ */
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: #c9853f;
+}
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: rgba(201, 133, 63, 0.1);
+}
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+  background-color: #c9853f;
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: #d4a132;
+}
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: rgba(212, 161, 50, 0.1);
+}
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before {
+  background-color: #d4a132;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: #7da89e;
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: rgba(125, 168, 158, 0.1);
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+  background-color: #7da89e;
+}
+
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: #6b8caf;
+}
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background-color: rgba(107, 140, 175, 0.1);
+}
+.md-typeset .info > .admonition-title::before,
+.md-typeset .info > summary::before {
+  background-color: #6b8caf;
+}
+
+/* ------------------------------------------------------------------ */
+/* Custom admonition types                                             */
+/* ------------------------------------------------------------------ */
+
+/* mood — strange-mood callouts (lavender / ghost) */
+:root {
+  --md-admonition-icon--mood: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202C8%202%205%205%205%209v11l3-2%202%202%202-2%202%202%203-2V9c0-4-3-7-7-7zm-2%206a1%201%200%20011%201%201%201%200%2001-1%201%201%201%200%2001-1-1%201%201%200%20011-1zm4%200a1%201%200%20011%201%201%201%200%2001-1%201%201%201%200%2001-1-1%201%201%200%20011-1z'/%3E%3C/svg%3E");
+}
+.md-typeset .admonition.mood,
+.md-typeset details.mood {
+  border-color: #9a7eb0;
+}
+.md-typeset .mood > .admonition-title,
+.md-typeset .mood > summary {
+  background-color: rgba(154, 126, 176, 0.12);
+}
+.md-typeset .mood > .admonition-title::before,
+.md-typeset .mood > summary::before {
+  background-color: #9a7eb0;
+  -webkit-mask-image: var(--md-admonition-icon--mood);
+          mask-image: var(--md-admonition-icon--mood);
+}
+
+/* fps — framerate-death warnings (amber / gauge) */
+:root {
+  --md-admonition-icon--fps: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%204a8%208%200%2000-8%208%208%208%200%20003%206.2V20h10v-1.8a8%208%200%20003-6.2%208%208%200%2000-8-8zm0%203a1%201%200%20011%201v1a1%201%200%2001-2%200V8a1%201%200%20011-1zm-5%204a1%201%200%20011%201%201%201%200%2001-1%201%201%201%200%2001-1-1%201%201%200%20011-1zm10%200a1%201%200%20011%201%201%201%200%2001-1%201%201%201%200%2001-1-1%201%201%200%20011-1zm-2.5%201.5l-3%204h2l1-4z'/%3E%3C/svg%3E");
+}
+.md-typeset .admonition.fps,
+.md-typeset details.fps {
+  border-color: #d4a132;
+}
+.md-typeset .fps > .admonition-title,
+.md-typeset .fps > summary {
+  background-color: rgba(212, 161, 50, 0.12);
+}
+.md-typeset .fps > .admonition-title::before,
+.md-typeset .fps > summary::before {
+  background-color: #d4a132;
+  -webkit-mask-image: var(--md-admonition-icon--fps);
+          mask-image: var(--md-admonition-icon--fps);
+}
+
+/* quickfort — DFHack blueprint hints (slate-blue / 3x3 grid) */
+:root {
+  --md-admonition-icon--quickfort: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M3%203h5v5H3zM9.5%203h5v5h-5zM16%203h5v5h-5zM3%209.5h5v5H3zM9.5%209.5h5v5h-5zM16%209.5h5v5h-5zM3%2016h5v5H3zM9.5%2016h5v5h-5zM16%2016h5v5h-5z'/%3E%3C/svg%3E");
+}
+.md-typeset .admonition.quickfort,
+.md-typeset details.quickfort {
+  border-color: #6b8caf;
+}
+.md-typeset .quickfort > .admonition-title,
+.md-typeset .quickfort > summary {
+  background-color: rgba(107, 140, 175, 0.12);
+}
+.md-typeset .quickfort > .admonition-title::before,
+.md-typeset .quickfort > summary::before {
+  background-color: #6b8caf;
+  -webkit-mask-image: var(--md-admonition-icon--quickfort);
+          mask-image: var(--md-admonition-icon--quickfort);
+}
+
+/* lost — fortress-falls / post-mortem (deep red / tombstone) */
+:root {
+  --md-admonition-icon--lost: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cpath%20d='M12%202c-4%200-7%203-7%207v12h14V9c0-4-3-7-7-7zm-1%206h2v2h2v2h-2v5h-2v-5H9v-2h2V8z'/%3E%3C/svg%3E");
+}
+.md-typeset .admonition.lost,
+.md-typeset details.lost {
+  border-color: #a04848;
+}
+.md-typeset .lost > .admonition-title,
+.md-typeset .lost > summary {
+  background-color: rgba(160, 72, 72, 0.12);
+}
+.md-typeset .lost > .admonition-title::before,
+.md-typeset .lost > summary::before {
+  background-color: #a04848;
+  -webkit-mask-image: var(--md-admonition-icon--lost);
+          mask-image: var(--md-admonition-icon--lost);
+}

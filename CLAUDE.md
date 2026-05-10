@@ -54,6 +54,8 @@ If a section is DFHack-only, put it under `docs/dfhack/` rather than mixing it i
 - `!!! note` — sidebars, lore, edge cases.
 - `!!! info` — version-specific behavior callouts.
 
+DF-specific custom types (defined in `docs/stylesheets/extra.css`): `!!! mood` (strange-mood callouts), `!!! fps` (framerate hazards), `!!! quickfort` (DFHack blueprint hints), `!!! lost` (post-mortem / fortress-falls).
+
 ### References
 
 Link primary references on first mention in a page:
