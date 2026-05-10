@@ -4,10 +4,6 @@
  * No Jinja template overrides — safe across Material upgrades.
  */
 
-/* Cinzel for headings, JetBrains Mono as the .code-clean fallback for ASCII
-   diagrams. EB Garamond and VT323 are auto-loaded by Material via theme.font. */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
-
 /* ------------------------------------------------------------------ */
 /* Color schemes                                                       */
 /* ------------------------------------------------------------------ */
@@ -39,35 +35,6 @@
   --md-typeset-a-color: #3a6e64;
   --md-code-bg-color: #ebdfc4;
   --md-code-fg-color: #2a241c;
-}
-
-/* ------------------------------------------------------------------ */
-/* Typography                                                          */
-/* ------------------------------------------------------------------ */
-
-.md-typeset h1,
-.md-typeset h2,
-.md-typeset h3 {
-  font-family: "Cinzel", serif;
-  letter-spacing: 0.02em;
-  font-weight: 600;
-}
-
-/* VT323 for code by default; JetBrains Mono in the fallback chain so the
-   monospace metric is sane if VT323 fails to load. */
-.md-typeset code,
-.md-typeset pre > code {
-  font-family: "VT323", "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
-  font-size: 1.05em;
-}
-
-/* Opt-out class for ASCII fences that misalign in VT323.
-   Usage: ```text { .code-clean } */
-.md-typeset .code-clean code,
-.md-typeset code.code-clean,
-.md-typeset pre.code-clean code {
-  font-family: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
-  font-size: 0.85em;
 }
 
 /* ------------------------------------------------------------------ */

@@ -7,9 +7,6 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  font:
-    text: EB Garamond
-    code: VT323
   features:
     - navigation.instant
     - navigation.tracking
