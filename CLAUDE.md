@@ -4,7 +4,7 @@ Guidance for Claude Code sessions working in this repository.
 
 ## Purpose
 
-A personal playbook of the strategies the author actually uses to keep his Dwarf Fortresses alive — across both **vanilla DF** (Steam release / Classic) and **DFHack** (current stable). It is **not** a general DF reference; that role belongs to [dwarffortresswiki.org](https://www.dwarffortresswiki.org/). Pages here record what *he* does and what's worked for him across many forts. Built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and deployed to GitHub Pages.
+A personal playbook of the **efficient** strategies the author actually uses to keep his Dwarf Fortresses alive — across both **vanilla DF** (Steam release / Classic) and **DFHack** (current stable). It is **not** a general DF reference; that role belongs to [dwarffortresswiki.org](https://www.dwarffortresswiki.org/). Pages here record what *he* does, what's worked, and *why it's efficient* — measured by FPS, resource economy, or player-side labor-hours saved. Built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and deployed to GitHub Pages.
 
 Live site: https://dwarfjockey.github.io/dwarf-fortress-strategies/
 Source: https://github.com/DwarfJockey/dwarf-fortress-strategies
@@ -88,6 +88,8 @@ DF mechanics shift across releases. If a strategy depends on a specific DF versi
 ### Tone
 
 Write in **first person, from lived experience**. This is the author's playbook — "what I do, what's worked for me" — not a third-party wiki. Prefer "I pack 6 picks and 2 axes" over "bring picks and axes" or "you should bring picks and axes". Be concrete and specific: exact counts, exact materials, exact biomes — these are *his* numbers, not averages. Skip hedged general advice ("you may want to consider"); say what he does and why. Cite the wiki and DFHack docs to verify mechanics, not as the page's authority — the authority is the author's experience. Skip LP-style narrative ("then a forgotten beast appeared and..."); this is still a reference, just from one player's seat.
+
+The lens is **efficiency**. Every recommendation should pay off in one of: **FPS** (item count, pathing, unit growth, off-screen simulation, hauling distance), **resources** (especially scarce — flux, magma-safe, shells, adamantine, cut gems), or **player-side labor-hours** (work orders over manual jobs, DFHack tools over repetition, profiles that route work automatically). When recommending something, the "why" line should usually point at one of those three.
 
 ## What not to commit
 

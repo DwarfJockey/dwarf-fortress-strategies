@@ -1,8 +1,8 @@
 # Dwarf Fortress Strategies
 
-This is my playbook for **Dwarf Fortress** — the strategies I actually use to keep my forts alive across the current Steam / Classic release and **[DFHack](https://docs.dfhack.org/en/stable/)** stable. It's a record of what's worked for me over many fortresses, not a general DF reference.
+This is my playbook for **efficient Dwarf Fortress** — the strategies I actually use to keep my forts alive *and fast* across the current Steam / Classic release and **[DFHack](https://docs.dfhack.org/en/stable/)** stable. It's a record of what's worked for me over many fortresses, judged by **FPS**, **resource economy**, and **how few clicks each fort costs me**. Not a general DF reference.
 
-For canonical mechanics, the [Dwarf Fortress Wiki](https://www.dwarffortresswiki.org/) is the source of truth. I'll cite it where I'm relying on a specific behaviour. The opinions, embark loadouts, and "this is how I always do it" — those are mine.
+For canonical mechanics, the [Dwarf Fortress Wiki](https://www.dwarffortresswiki.org/) is the source of truth. I'll cite it where I'm relying on a specific behaviour. The opinions, embark loadouts, work-order setups, and layouts — those are mine, and they earn their place on this site by saving FPS, materials, or clicks.
 
 !!! tip "How the site is organized"
 
