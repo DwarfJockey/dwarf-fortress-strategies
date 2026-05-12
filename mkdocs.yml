@@ -82,6 +82,7 @@ nav:
       - getting-started/first-fortress.md
       - getting-started/announcements.md
   - Embark:
+      - embark/world-gen.md
       - embark/site-selection.md
       - embark/starting-seven.md
       - embark/supplies.md
